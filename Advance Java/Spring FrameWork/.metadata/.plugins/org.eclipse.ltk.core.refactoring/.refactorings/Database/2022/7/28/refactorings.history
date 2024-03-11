@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyJavaConfig.java&apos; to &apos;RestProjecthw2/src/main/java/restControllers&apos;&#x0D;&#x0A;- Original project: &apos;Database&apos;&#x0D;&#x0A;- Destination element: &apos;RestProjecthw2/src/main/java/restControllers&apos;&#x0D;&#x0A;- Original element: &apos;Config.MyJavaConfig.java&apos;" description="Copy compilation unit" destination="=RestProjecthw2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;restControllers" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Config{MyJavaConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1656955254421" units="1" version="1.0"/>
+</session>

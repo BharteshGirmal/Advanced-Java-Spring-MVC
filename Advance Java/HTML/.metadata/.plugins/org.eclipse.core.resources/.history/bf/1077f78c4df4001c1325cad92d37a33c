@@ -1,0 +1,28 @@
+package Study;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Serv1")
+public class Serv1 extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		int count=0;
+		count++;
+		ServletContext sc= super.getServletContext();
+		RequestDispatcher rd= sc.getRequestDispatcher("/Serv2");
+		
+		request.setAttribute("counter", count);
+		rd.forward(request, response);
+		//rd.include(request, response);
+	}
+
+}

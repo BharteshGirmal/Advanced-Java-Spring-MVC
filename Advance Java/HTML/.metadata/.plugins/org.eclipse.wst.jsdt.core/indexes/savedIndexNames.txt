@@ -1,0 +1,16 @@
+INDEX VERSION 1.4+E:\C-DAC\Module 6 Advance Java\HTML\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2415422276.index
+1970275398.index
+2075931166.index
+2637197229.index
+2923947236.index
+1675355766.index
+2830058842.index
+2883683095.index
+744357045.index
+1520882612.index
+1584408610.index
+2234634515.index
+3535848626.index
+121092630.index
+2782448235.index

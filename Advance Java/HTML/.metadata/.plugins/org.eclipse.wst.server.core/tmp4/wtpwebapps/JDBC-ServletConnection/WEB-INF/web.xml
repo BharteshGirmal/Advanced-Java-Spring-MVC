@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>VerifyLogin</display-name>
+  
+  <servlet>
+ <servlet-name>JDBC</servlet-name>
+ <servlet-class>JDBCConnection.AddProductServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>JDBC</servlet-name>
+ <url-pattern>/Connect</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet>
+ <servlet-name>JDBC2</servlet-name>
+ <servlet-class>JDBCConnection.ShowServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>JDBC2</servlet-name>
+ <url-pattern>/Show</url-pattern>
+ </servlet-mapping>
+ 
+    <servlet>
+ <servlet-name>home1</servlet-name>
+ <servlet-class>HW1.ProductServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>home1</servlet-name>
+ <url-pattern>/Home1</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+ <servlet-name>home3</servlet-name>
+ <servlet-class>HW4.SumServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>home3</servlet-name>
+ <url-pattern>/Sum</url-pattern>
+ </servlet-mapping>
+ 
+ 
+     <servlet>
+ <servlet-name>home2</servlet-name>
+ <servlet-class>HW1.UpdateServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>home2</servlet-name>
+ <url-pattern>/Update</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ </web-app>
+
+
+
+
+

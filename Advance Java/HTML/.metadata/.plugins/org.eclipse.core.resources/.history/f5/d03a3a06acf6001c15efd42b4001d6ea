@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<div>
+<fieldset>
+<table border='6'>
+<tr><td>Bhartesh</td><td><img alt="Logo" src="https://i.pinimg.com/236x/95/e8/e4/95e8e4d77959762a62087ac768f7c8d0.jpg"></td></tr>
+</table>
+</fieldset>
+</div>

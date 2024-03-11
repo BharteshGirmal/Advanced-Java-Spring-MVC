@@ -1,0 +1,84 @@
+HW 21-June
+ Create a dynamic web project  ---- HWExample
+	First page  ---
+		WELCOME   and an Image of your choice !!
+			Show links ----
+			Convert Rupee To Dollar 
+			Register
+			Good Bye
+			
+On each html  add  a home link  that will take you welcome page !!!!
+
+
+
+
+HW 20-june
+1. Write your Resume in Html !!!
+	   Name:   
+	   Address
+	   Gender
+	    education
+	    table format education details 	
+	Give a suitable background color
+	Give bold, italic underline properly
+	Give appropriate heading using h1 tag
+	Change the font color using style attribute  !!!
+		
+2. Create a Registration Form
+	  Usernmae :  textfield        Surname : Textfied
+	  DOB :  input date
+	  Favorite color : input color
+	  Email  :
+	  Password : input password
+	  Re enter Password :  input password
+	 Address : Textarea  
+	  dropdown  - City 
+	  dropdown -state
+  	   Select educational qualifications:
+		Checkboxes for ssc , hsc Graduate  PG  , PHD                                    PostDoc   } all or any could be selected
+	     Gender
+		3 radio buttons   
+		 male /female/other  } only one should be selected
+		
+	     Button  - OK    , Button - Save  , Button -Clear  
+		
+3.  --- create  html for Currency Conversion  ---- Find a few currency conversion screens on net and do accordingly !!!
+	
+4.  ---create a html for Change Password  ----
+
+
+_____________________________________________________
+
+HW 18-june
+
+1. Write a Java client that gives following Menu
+	Do it using study.hw.DAO + PrepareStatement 
+	Write main class as study.hw.Client3
+
+	1. update name of a given id
+	2. update cost of given id
+	3. update both name and cost of given id
+	4. delete a record of given
+	5. show only the info of row of given id
+	6. quit
+
+
+2.  Write a Java client that fetches all names of the products
+	add all the names in an ArrayList 
+	show the size of the arrayList 
+	Ask the user to enter a name
+		print whether the name is in the ArrayList or 		not
+
+
+3.  Write the getName stored procedure with IN and OUT parameter as discussed in class .
+	call the procedure through JAVA as discussed in class
+
+
+4. create account table as discussed in class
+	try out the JDBCTxExample as discussed in class
+
+
+
+
+
+

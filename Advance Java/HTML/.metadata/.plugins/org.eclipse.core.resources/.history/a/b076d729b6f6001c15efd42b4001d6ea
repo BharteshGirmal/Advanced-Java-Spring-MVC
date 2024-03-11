@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Expression Launguage (EL)</title>
+</head>
+<body>
+<form action='ExprLangEx2.jsp'>
+<br/><h2><b>Enter the Data</b></h2>
+<br/><br/><input type="text" name='data'/>
+<br/><br/><input type="submit" value='Submit'/>
+</form>
+</body>
+</html>

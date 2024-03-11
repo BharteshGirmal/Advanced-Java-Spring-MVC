@@ -1,0 +1,3 @@
+127.0.0.1 - - [25/Aug/2022:11:10:13 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:10:14 +0530] "GET /Dynamic_Servlet/servlet/Study.FirstServlet HTTP/1.1" 404 801
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:10:14 +0530] "GET /favicon.ico HTTP/1.1" 404 762

@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project Logo</title>
+</head>
+<body>
+<div>
+<fieldset>
+<table border='6'>
+<tr><td>Bhartesh</td><td><img alt="Logo" src="https://www.imagesbazaar.com/advancesearchresultarchive/creative/668/29/0/0/0/0/View%20All/0/0/0/0"></td></tr>
+</table>
+</fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    
+    <!--  this bean uses setters and default constructor -->
+    <bean id="msg" class="Beans.MessageBean"  scope="prototype">
+    	<property name="Message" value="Hello from MessageBean"></property>
+    	<property name="sendername" value="Bhartesh"></property>
+    	<property name="ReceiverAddress"   ref="Addr"  ></property>
+    </bean>
+    
+    <!-- this bean uses the parameterized Constructor -->
+    <bean id="msg2" class="Beans.MessageBean">
+    <constructor-arg value="Good Morining "></constructor-arg>
+    <constructor-arg value="Pokemon"></constructor-arg>
+    <constructor-arg ref="Addr"></constructor-arg>
+    </bean>
+    
+      <!-- this bean uses the parameterized Constructor 1 parameter -->
+    <bean id="msg3" class="Beans.MessageBean">
+    <constructor-arg ref="Addr"></constructor-arg>
+    </bean>
+    
+    <!-- this bean uses the parameterized Constructor 1 parameter -->
+    <bean id="msg4" class="Beans.MessageBean" autowire="byType">
+    </bean>
+    
+     <!-- this bean uses the parameterized Constructor 1 parameter -->
+    <bean id="msg5" class="Beans.MessageBean" autowire="byName">
+    </bean>
+
+	<bean id="Addr"  class="Beans.AddressBean"  lazy-init="true">
+	<property name="location"  value="Ichalkaranji" ></property>
+	<property name="city"  value="Kolhapur" ></property>
+	<property name="state"  value="Maharashtra" ></property>
+	<property name="country"  value="INDIA" ></property>
+	<property name="pin"  value="416143" ></property>
+	</bean>
+	
+	<bean id="ReceiverAddress"  class="Beans.AddressBean"  lazy-init="true">
+	<property name="location"  value="Kothrud" ></property>
+	<property name="city"  value="Pune" ></property>
+	<property name="state"  value="Maharashtra" ></property>
+	<property name="country"  value="INDIA" ></property>
+	<property name="pin"  value="419843" ></property>
+	</bean>
+</beans>

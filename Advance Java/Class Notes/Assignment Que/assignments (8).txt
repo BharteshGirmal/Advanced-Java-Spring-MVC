@@ -1,0 +1,336 @@
+HW30-June-22
+1. Do the Autowired examples in the Demo project as discussed in class for Annotated class BookBean and also in Beans.xml for MessageBean
+
+2. Do the db project using Simple Jdbc and JdbcTemplate as discussed in class
+
+3. Create a new db2 project same as db project -
+	use the same Main class DAOBean and DAOBeanUsingJdbcTemplate
+	BUT  instead of using JavaConfig and Annotated class and Autowired annotation - DO ALL the bean CONFIGURATION in beans.XML  
+
+
+4. Create a new project HW30June - add dependencies -spring jdbc data and mysql connector
+     write a main class  that shows a menu loop
+	 1. add appointment
+         2. update appointment purpose
+        3. show all appointments 
+       4. show appointments for a given user
+       5. quit
+
+Use the appointment table used in the JSP assignment earlier
+Use JdbcTemplate  in a DAO bean to access database
+	call the DAO bean methods from switch case menu in main
+
+
+
+
+
+
+
+
+HW29-June-22
+1. Create a new project using spring starter site
+	name the project HW1
+		create a ProductBean having properties name,cost and description
+	add the bean information in beans.xml
+	make the scope as prototype
+	In the main ---
+        get 3 instances of the bean  , change the cost of each
+	show the details of each
+
+
+2. Create a new project HW2 using spring starter site
+		create a PersonBean having properties name ,age and address.  address is the reference of AddressBean( properties city , pin )
+	add the bean info of both the beans in JavaConfig configuration class. 
+	In the main ---
+		get instance of PersonBean and show name, age,city and pin
+
+
+3.  Create a new project HW3 using spring starter site
+	create a AccountBean having properties acctNo, balance
+		annotate the bean with @Component, keep scope prototype
+	In main -
+		get 2 instances of the AccountBean  , change acctNo and balance, show details of both instances
+
+
+HW28-June
+1. Try out the EL and scopes examples as discussed in class
+2. Write a JSP application AppointmentApp
+		Login page - uname , password
+			on correct login go to home page , on wrong login show login page with red message - incorrect login try again [ HINT use forward action and EL  param.message  ]
+		home page should show a date input , purpose : textArea  and two radio buttons official/personal
+                                     from and to   time input  and a submit button.
+		once user clicks on the submit button save the data in the appointment table  for the logged in USER ONLY  [ HINT get user name from session ]
+		and forward to home.jsp.
+		home.jsp can have a show appointments link 
+				ask user to enter the date of appointment and click button
+					below it show a table of all appointments of that date for the logged in USER only 
+		provide a title.jsp  that shows  User name,  todays date and logout link }  [ HINT use include directive to show this title on all pages ]
+
+		
+	
+
+HW27-June
+1. Complete the Login Logout flow discussed in class
+2. Write a JSP that prints a table of 2 upto 1000 
+		2*1=2
+               2*2=4
+              ...
+              2*1000 = 2000
+3. Write a jsp  that prints an html table having three columns
+		number   square  cube
+          show the squares and cubes of all numbers between 1 to 100
+
+4.  Write a JSP input.jsp that shows a textfield and a submit button ok when the user enters a string in the textfield and clicks OK  then the  action="show.jsp " 
+  in show.jsp show the string in uppercase 
+		[HINT   write a scriplet    <%  String s = request.getParameter("name")   %>
+			The string is  <%=s.toUpperCase() %>  ]
+
+5.  Write a calculator.jsp
+		show a num1 : textfield
+	        show a num2 : textfield
+                   show a dropdown with operators ---- + ,- ,* , /
+		show a calculate button
+	when calculate button is clicked then action=output.jsp
+	on output.jsp   show the result of the calculation 
+		2  +  3  = 5 
+         show a link to calculator.jsp 
+
+
+6.  write a currencyconvertor.jsp
+			show a num1: textfield  rupee symbol
+			convert button
+		when convert button is clicked action=result.jsp
+		on result.jsp show output as 
+			100 rupee symbol   = 1.28 $
+         show a link to currencyconvertor.jsp
+
+HW25-June
+1. Write a flow as follows ---
+		after the login is verified in earlier hw 
+if the uname is correct
+forward control to HomeServlet that shows Welcome Username.
+else forward control to the http://localhost:8080/AppHW/find       add a message in red color that login is invalid above the Login screen .
+
+2.  Do the cookie example to set the fav-col as discussed in class
+
+
+
+
+ 
+
+HW23-June
+0. Do the LifeCycleServlet  as discussed in Class
+0.1 . Do the ShowServlet for Product rows as discussed in Class
+
+1. Write a FLOW as follows
+		 http://localhost:8080/AppHW/find   GET       [ HINT WRITE A SERVLET  S1  that is mapped to  url-pattern " find "  , add doGet ]
+		The above url should show a dropdown list of all productIds in the product table.
+		Add a show button below it.
+		when USER selects a product Id and clicks show button
+		go to   http://localhost:8080/AppHW/find  POST   [  HINT   add doPost to the SERVLET S1  created above   ]
+		this should show the id, name and cost of the selected id in 3 textfields. the id textfield should be readOnly. 
+		show a update button below it.
+		When USER changes the product name or cost or both and clicks the update button then
+                go to http://localhost:8080/AppHW/update POST   [ HINT WRITE A SERVLET S2 that is mapped to url-pattern "update"  , add doPost  ]
+		this should update the table with new values and show output as Record updated .  
+               show a link to the  http://localhost:8080/AppHW/find     below it.
+
+2. Write a flow as follows  ---
+		
+ http://localhost:8080/AppHW/delete  GET      [HINT WRITE A SERVLET S3 that is mapped to url-pattern "delete"  , add doGet  ]
+		The above url should show a dropdown list of all productIds in the product table.
+		Add a delete button below it.
+		when USER selects a product Id and clicks delete button
+		then
+              go to http://localhost:8080/AppHW/delete  POST  [HINT in S3  add doPost  ]
+		this should delete the record selected by the USER
+		and show output as Record Deleted
+
+
+
+3.  	Create a database table  ----- Users
+		Primary key  Username   ,  password , date 
+		U insert values in the table from mysql client 
+
+	      http://localhost:8080/AppHW2/login  GET  [HINT WRITE A SERVLET S4 that is mapped to url-pattern "login"  , add doGet  ]
+
+			this should show the uname password login screen
+			when USER enters the details and clicks login go to
+		 http://localhost:8080/AppHW2/login  POST    [HINT in S4, add doPost  ]
+				 in the doPost method 
+				Use the HashMap to verify if credentials are correct . If Correct show output as welcome user else show output as Invalid user.
+
+		ADD  the init method to the Servlet  as follows ---
+			In the init method  -----
+                     Fire a select query DAO  that fetches all records of Users table . Create a HashMap<String String>  in the servlet  class as a property.	  add all unames and passwords to the hashmap
+	
+
+4.   when USER enters http://localhost:8080/AppHW3/total  [HINT WRITE A SERVLET S5 mapped to url-pattern "total , add doGet ]
+		show a table of
+			product name	   product cost
+		
+
+
+
+			Total   cost   :     
+	
+
+5.    create a table birthdays  having columns    id   first-name last-name   dob
+	when user enters url http://localhost:8080/AppHW4/newbday  [HINT WRITE A SERVLET S6 mapped to url-pattern "newbday" , add doGet ]
+		show a screen with text fields for fname lname and a date input field for don
+		add a save submit button below
+		when user enters values and clicks save button 
+		go to http://localhost:8080/AppHW4/newbday  [HINT in S6  , add doPost ]
+                this shoud insert the record in DB 
+		and show a screen  that shows a table of reminders 
+			fname lastname and dob for only those birthdays after today's date in the current year
+
+
+
+
+	
+	
+
+
+
+
+
+HW22-June
+1. Create a dynamic web project as discussed in class
+	input and  second  servlets
+	accept num , range and from-num  value from user
+	output -table printed from-num to range for num
+
+2. Create a dynamic web project Login
+	add InputServlet - accept a uname and password from 	user
+	write a form action="verify"  method="post"
+	on submit the control should go to the VerifyServlet doPost method
+	in the doPost method check if uname is iet and password is 123 --- then show output login success else show output login failed.
+
+	PLEASE NOTE  --- doPost method should be written exactly similar to doGet method
+
+
+3. Create a dynamic web project Welcome
+	add InputServlet - accept the name , surname of user using two text fields 
+	accept gender male /female using radio button
+	when user clicks sumbit button control should go to WelcomeServlet doPost method
+	this servlet should print 
+	Mr name Surname if gender is male
+	OR
+	Madam name Surname if gender is female
+
+	the name and surname should be first letter capital other letters small , even if user enters in upper/lower case
+
+
+4. Create a dynamic webp project that has a servlet StringServlet
+	this should show a table to the user 
+	having two columns 
+	    serial number   folder-names
+	show 200 rows 
+		serial number should start from 1 to 200
+		foldernames should be from A1 ,B1,C1,D1,E1....upto Z1 , then A2,B2,C2.....Z2......
+		
+		serial-number   folder-names
+	                        1                   A1
+		       2	          B1
+                                       ...
+		     26                  Z1
+                                        27                 A2
+                                        28                 B2
+                                       ...
+                                         52               Z2
+                                         53              A3
+                                         54              B3
+                                        ...
+
+
+
+
+
+
+
+---------------------------------------------
+HW 21-June
+ Create a dynamic web project  ---- HWExample
+	First page  ---
+		WELCOME   and an Image of your choice !!
+			Show links ----
+			Convert Rupee To Dollar 
+			Register
+			Good Bye
+			
+On each html  add  a home link  that will take you welcome page !!!!
+
+
+
+
+HW 20-june
+1. Write your Resume in Html !!!
+	   Name:   
+	   Address
+	   Gender
+	    education
+	    table format education details 	
+	Give a suitable background color
+	Give bold, italic underline properly
+	Give appropriate heading using h1 tag
+	Change the font color using style attribute  !!!
+		
+2. Create a Registration Form
+	  Usernmae :  textfield        Surname : Textfied
+	  DOB :  input date
+	  Favorite color : input color
+	  Email  :
+	  Password : input password
+	  Re enter Password :  input password
+	 Address : Textarea  
+	  dropdown  - City 
+	  dropdown -state
+  	   Select educational qualifications:
+		Checkboxes for ssc , hsc Graduate  PG  , PHD                                    PostDoc   } all or any could be selected
+	     Gender
+		3 radio buttons   
+		 male /female/other  } only one should be selected
+		
+	     Button  - OK    , Button - Save  , Button -Clear  
+		
+3.  --- create  html for Currency Conversion  ---- Find a few currency conversion screens on net and do accordingly !!!
+	
+4.  ---create a html for Change Password  ----
+
+
+_____________________________________________________
+
+HW 18-june
+
+1. Write a Java client that gives following Menu
+	Do it using study.hw.DAO + PrepareStatement 
+	Write main class as study.hw.Client3
+
+	1. update name of a given id
+	2. update cost of given id
+	3. update both name and cost of given id
+	4. delete a record of given
+	5. show only the info of row of given id
+	6. quit
+
+
+2.  Write a Java client that fetches all names of the products
+	add all the names in an ArrayList 
+	show the size of the arrayList 
+	Ask the user to enter a name
+		print whether the name is in the ArrayList or 		not
+
+
+3.  Write the getName stored procedure with IN and OUT parameter as discussed in class .
+	call the procedure through JAVA as discussed in class
+
+
+4. create account table as discussed in class
+	try out the JDBCTxExample as discussed in class
+
+
+
+
+
+

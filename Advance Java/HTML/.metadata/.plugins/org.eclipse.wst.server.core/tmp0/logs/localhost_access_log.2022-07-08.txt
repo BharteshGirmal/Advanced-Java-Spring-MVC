@@ -1,0 +1,14 @@
+127.0.0.1 - - [08/Jul/2022:22:14:11 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:14:17 +0530] "GET /ApponmentApp/LoginPage.jsp HTTP/1.1" 200 539
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:14:18 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:14:27 +0530] "GET /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=111 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:14:39 +0530] "POST /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=111 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:14:42 +0530] "GET /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=111 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:14:55 +0530] "GET /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=Bhartesh%401234 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:24 +0530] "POST /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=Bhartesh%401234 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:26 +0530] "POST /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=Bhartesh%401234 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:29 +0530] "POST /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=Bhartesh%401234 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:31 +0530] "GET /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=Bhartesh%401234 HTTP/1.1" 200 822
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:33 +0530] "GET /ApponmentApp/LoginPage.jsp HTTP/1.1" 200 539
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:33 +0530] "GET /ApponmentApp/LoginPage.jsp HTTP/1.1" 200 539
+0:0:0:0:0:0:0:1 - - [08/Jul/2022:22:15:47 +0530] "GET /ApponmentApp/HomePage.jsp?name=Bhartesh&pass=Bhartesh%40123 HTTP/1.1" 200 764

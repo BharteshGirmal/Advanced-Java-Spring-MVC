@@ -1,0 +1,43 @@
+<html>
+      <head>
+      <title> Registration Form </title>
+      </head>
+      <body>
+            <fieldset style="border: 5;" >
+            <form  action="./SubmitPage.html" method="get" >
+                  <label for="First Name">First Name</label>
+                  <br/><input type="text" name="FirstName"/>
+      
+                  <br/><label for="Last Name">Last Name</label>
+                  <br/><input type="text" name="Last Name" />
+
+                  <br/> <label for="Gender"> Gender </label>
+                  <input type="radio" name="Gender"/> Male
+                  <input type="radio" name=Gender/> Female
+                  <input type="radio" name=Gender/> Other
+
+                  <br/> <label for="Date of Birth"> Date of Birth</label>
+                  Date : <input type="date" name="Date of Birth" value="Date of Birth"/>
+
+                  <!-- Contory -->
+                  <br/><label for="Country"> Country </label>
+                  <select name="country">
+                        <option value="INDIA">INDIA</option>
+                        <option value="USA">USA</option>
+                        <option value="JAPAN">JAPAN</option>
+                  </select>
+
+                  <br/> <label for="Favourite Game"> Favourite Game</label>
+                  <input type="checkbox" name="Games"/> Chess
+                  <input type="checkbox" name="Games"/> Cricket
+
+                  <br/><label for="Telephone Number">Telephone</label>
+                  <input type="number" name="TelephoneNo"/>
+                  <input type="submit" name="Submit" value="Create Account"/>
+                  <input type="reset" name="Submit" value="Reset"/>
+
+
+            </form>
+      </fieldset>
+      </body>
+</html>

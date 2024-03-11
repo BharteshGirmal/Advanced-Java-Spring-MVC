@@ -1,0 +1,7 @@
+127.0.0.1 - - [09/Jul/2022:00:02:56 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:00:02:57 +0530] "GET /Scopes_in_Servlets/LoginServlet HTTP/1.1" 200 266
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:00:03:11 +0530] "POST /Scopes_in_Servlets/LoginServlet HTTP/1.1" 200 329
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:00:03:17 +0530] "POST /Scopes_in_Servlets/AntherServlet HTTP/1.1" 200 237
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:00:03:19 +0530] "POST /Scopes_in_Servlets/YetAntherServlet HTTP/1.1" 200 211
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:00:03:24 +0530] "GET /Scopes_in_Servlets/LogoutServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:00:03:24 +0530] "GET /Scopes_in_Servlets/LoginServlet HTTP/1.1" 200 266

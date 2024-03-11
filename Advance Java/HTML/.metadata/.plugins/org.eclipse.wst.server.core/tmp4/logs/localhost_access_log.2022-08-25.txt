@@ -1,0 +1,14 @@
+127.0.0.1 - - [25/Aug/2022:11:11:30 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:11:31 +0530] "GET /JDBC-ServletConnection/Home1 HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:11:31 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:11:40 +0530] "POST /JDBC-ServletConnection/Home1 HTTP/1.1" 200 682
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:11:46 +0530] "GET /JDBC-ServletConnection/Update?Update=UpdateName HTTP/1.1" 200 351
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:11:48 +0530] "GET /JDBC-ServletConnection/ProductServlet HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:11:53 +0530] "GET /JDBC-ServletConnection/DeleteServlet HTTP/1.1" 200 639
+127.0.0.1 - - [25/Aug/2022:11:15:50 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:15:51 +0530] "GET /JDBC-ServletConnection/HomePage HTTP/1.1" 200 271
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:15:51 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:15:54 +0530] "GET /JDBC-ServletConnection/InputServlet HTTP/1.1" 200 771
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:15:58 +0530] "POST /JDBC-ServletConnection/InputServlet HTTP/1.1" 500 1387
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:16:03 +0530] "GET /JDBC-ServletConnection/Verify HTTP/1.1" 200 260
+0:0:0:0:0:0:0:1 - - [25/Aug/2022:11:16:09 +0530] "POST /JDBC-ServletConnection/Verify HTTP/1.1" 200 72

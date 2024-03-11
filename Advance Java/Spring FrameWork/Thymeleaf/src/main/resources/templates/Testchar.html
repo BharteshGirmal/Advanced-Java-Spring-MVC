@@ -1,0 +1,18 @@
+<html>
+<body>
+<center>
+<fieldset>
+<h1 style="background-color: coral;">Character sets</h1>
+</fieldset>
+<fieldset>
+<table border="5">
+<tbody>
+<tr th:each="item : ${list}">
+<td ><span th:text="   ${item}   "></span></td>
+</tr>
+</tbody>
+</table>
+</fieldset>
+</center>
+</body>
+</html>

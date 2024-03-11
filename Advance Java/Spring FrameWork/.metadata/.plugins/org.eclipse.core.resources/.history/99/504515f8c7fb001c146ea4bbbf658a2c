@@ -1,0 +1,46 @@
+package restControllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import RestAPI.Book;
+
+@RestController
+@RequestMapping(path ="/book" )
+public class DBController 
+{
+	
+	@Autowired
+	JdbcTemplate template;
+	
+	public DBController() 
+	{
+		System.out.println("Rest Controller Constructor is get Called ... ");
+	}
+	
+	//GET  /book/getAll      show JSON array of all books in the DB table book
+	@GetMapping("/getAll")
+	public List<Book> getall()
+	{	
+		List<Book> list=template.query("select * from Book",(rs,rownum)->{return new Book(rs.getString(1),rs.getString(2),rs.getInt(3));});
+		return list;
+	}
+	
+	//POST  /book/add     Pass the book Info as RequestBody and  INSERT row in DB
+	@PostMapping("add/{name}/{author}/{cost}")
+	public String Addbook(@PathVariable("name") String bname ,@PathVariable("bauthor") String bauthor,@PathVariable("cost")int bcost )
+	{
+		template.update("insert into Book values(?,?,?) ",bname,bauthor,bcost);
+		return "Record Inserted";
+	}
+	
+	
+}

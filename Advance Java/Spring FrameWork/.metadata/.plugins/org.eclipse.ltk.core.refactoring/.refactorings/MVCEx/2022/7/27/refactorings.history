@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;JavaConfigration.java&apos; to &apos;MVC2/src/main/java/Part2&apos;&#x0D;&#x0A;- Original project: &apos;MVCEx&apos;&#x0D;&#x0A;- Destination element: &apos;MVC2/src/main/java/Part2&apos;&#x0D;&#x0A;- Original element: &apos;MVC.JavaConfigration.java&apos;" description="Copy compilation unit" destination="=MVC2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Part2" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;MVC{JavaConfigration.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1656743223823" units="1" version="1.0"/>
+</session>

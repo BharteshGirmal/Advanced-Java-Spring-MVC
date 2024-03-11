@@ -1,0 +1,318 @@
+Enter password: *************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1606
+Server version: 8.0.29 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use db2;
+Database changed
+mysql> show tables;
++-----------------------+
+| Tables_in_db2         |
++-----------------------+
+| a                     |
+| appoinment            |
+| birthday              |
+| book                  |
+| car                   |
+| course                |
+| course_table          |
+| course_table_students |
+| courseentity          |
+| d                     |
+| demo                  |
+| department            |
+| dept                  |
+| deptbk                |
+| duplicate             |
+| employee              |
+| employee2             |
+| hibernate_sequence    |
+| holiday               |
+| login                 |
+| logindetails          |
+| logindetails2         |
+| product               |
+| story                 |
+| story_book            |
+| student               |
+| student_table         |
+| user                  |
+| user2                 |
+| user_profile          |
+| v1                    |
++-----------------------+
+31 rows in set (0.03 sec)
+
+mysql> table student_table;
+ERROR 1412 (HY000): Table definition has changed, please retry transaction
+mysql> commit;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> table student_table;
++------------+--------------------------+--------------+
+| student_id | email                    | student_name |
++------------+--------------------------+--------------+
+|          2 | shubhamsharma@gmail.com  | Shubham      |
+|          3 | bharteshgirmal@gmail.com | Bhartesh     |
+|          4 | hardikparab@gmail.com    | Hardik       |
+|          5 | nilimapansare@gmail.com  | Nilima       |
+|          6 | rushikeshpekar@gmail.com | Rushikesh    |
++------------+--------------------------+--------------+
+5 rows in set (0.00 sec)
+
+mysql> table course_table;
++-----------+------------------+---------------+----------+
+| course_id | course_desc      | course_name   | duration |
++-----------+------------------+---------------+----------+
+|         1 | Java Programming | Advanced Java |       15 |
++-----------+------------------+---------------+----------+
+1 row in set (0.00 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
++-------------------+---------------------+
+5 rows in set (0.00 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
++-------------------+---------------------+
+5 rows in set (0.00 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
++-------------------+---------------------+
+5 rows in set (0.00 sec)
+
+mysql> table course_table;
++-----------+------------------+---------------+----------+
+| course_id | course_desc      | course_name   | duration |
++-----------+------------------+---------------+----------+
+|         1 | Java Programming | Advanced Java |       15 |
++-----------+------------------+---------------+----------+
+1 row in set (0.00 sec)
+
+mysql> table student_table;
++------------+--------------------------+--------------+
+| student_id | email                    | student_name |
++------------+--------------------------+--------------+
+|          2 | shubhamsharma@gmail.com  | Shubham      |
+|          3 | bharteshgirmal@gmail.com | Bhartesh     |
+|          4 | hardikparab@gmail.com    | Hardik       |
+|          5 | nilimapansare@gmail.com  | Nilima       |
+|          6 | rushikeshpekar@gmail.com | Rushikesh    |
++------------+--------------------------+--------------+
+5 rows in set (0.00 sec)
+
+mysql> table student_table;
++------------+--------------------------+--------------+
+| student_id | email                    | student_name |
++------------+--------------------------+--------------+
+|          2 | shubhamsharma@gmail.com  | Shubham      |
+|          3 | bharteshgirmal@gmail.com | Bhartesh     |
+|          4 | hardikparab@gmail.com    | Hardik       |
+|          5 | nilimapansare@gmail.com  | Nilima       |
+|          6 | rushikeshpekar@gmail.com | Rushikesh    |
++------------+--------------------------+--------------+
+5 rows in set (0.01 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> table student_table;
+Empty set (0.00 sec)
+
+mysql> table course_table;
+Empty set (0.01 sec)
+
+mysql> table course_table_students;
+Empty set (0.00 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> table student_table;
+ERROR 1146 (42S02): Table 'db2.student_table' doesn't exist
+mysql> table course_table;
+ERROR 1146 (42S02): Table 'db2.course_table' doesn't exist
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> table course_table;
++-----------+------------------+---------------+----------+
+| course_id | course_desc      | course_name   | duration |
++-----------+------------------+---------------+----------+
+|         1 | Java Programming | Advanced Java |       21 |
++-----------+------------------+---------------+----------+
+1 row in set (0.00 sec)
+
+mysql> table student_table;
++------------+--------------------------+--------------+
+| student_id | email                    | student_name |
++------------+--------------------------+--------------+
+|          2 | shubhamsharma@gmail.com  | Shubham      |
+|          3 | nilimapansare@gmail.com  | Nilima       |
+|          4 | rushikeshpekar@gmail.com | Rushikesh    |
+|          5 | bharteshgirmal@gmail.com | Bhartesh     |
+|          6 | hardikparab@gmail.com    | Hardik       |
++------------+--------------------------+--------------+
+5 rows in set (0.00 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
++-------------------+---------------------+
+5 rows in set (0.01 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
++-------------------+---------------------+
+5 rows in set (0.00 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
+|                 7 |                   8 |
+|                 7 |                   9 |
+|                 7 |                  10 |
+|                 7 |                  11 |
+|                 7 |                  12 |
++-------------------+---------------------+
+10 rows in set (0.00 sec)
+
+mysql> table student_table;
++------------+--------------------------+--------------+
+| student_id | email                    | student_name |
++------------+--------------------------+--------------+
+|          2 | shubhamsharma@gmail.com  | Shubham      |
+|          3 | nilimapansare@gmail.com  | Nilima       |
+|          4 | rushikeshpekar@gmail.com | Rushikesh    |
+|          5 | bharteshgirmal@gmail.com | Bhartesh     |
+|          6 | hardikparab@gmail.com    | Hardik       |
+|          8 | bharteshgirmal@gmail.com | Bhartesh     |
+|          9 | rushikeshpekar@gmail.com | Rushikesh    |
+|         10 | nilimapansare@gmail.com  | Nilima       |
+|         11 | shubhamsharma@gmail.com  | Shubham      |
+|         12 | hardikparab@gmail.com    | Hardik       |
++------------+--------------------------+--------------+
+10 rows in set (0.01 sec)
+
+mysql> table course_table;
++-----------+------------------+--------------------+----------+
+| course_id | course_desc      | course_name        | duration |
++-----------+------------------+--------------------+----------+
+|         1 | Java Programming | Advanced Java      |       21 |
+|         7 | MYSQL            | Datbase Technology |       16 |
++-----------+------------------+--------------------+----------+
+2 rows in set (0.00 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> table course_table;
++-----------+-----------------------+--------------------+----------+
+| course_id | course_desc           | course_name        | duration |
++-----------+-----------------------+--------------------+----------+
+|         1 | Java Programming      | Advanced Java      |       21 |
+|         7 | MYSQL                 | Datbase Technology |       16 |
+|        13 | Algorithum using Java | Data Structures    |       22 |
++-----------+-----------------------+--------------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> table student_table;
++------------+--------------------------+--------------+
+| student_id | email                    | student_name |
++------------+--------------------------+--------------+
+|          2 | shubhamsharma@gmail.com  | Shubham      |
+|          3 | nilimapansare@gmail.com  | Nilima       |
+|          4 | rushikeshpekar@gmail.com | Rushikesh    |
+|          5 | bharteshgirmal@gmail.com | Bhartesh     |
+|          6 | hardikparab@gmail.com    | Hardik       |
+|          8 | bharteshgirmal@gmail.com | Bhartesh     |
+|          9 | rushikeshpekar@gmail.com | Rushikesh    |
+|         10 | nilimapansare@gmail.com  | Nilima       |
+|         11 | shubhamsharma@gmail.com  | Shubham      |
+|         12 | hardikparab@gmail.com    | Hardik       |
+|         14 | bharteshgirmal@gmail.com | Bhartesh     |
+|         15 | nilimapansare@gmail.com  | Nilima       |
++------------+--------------------------+--------------+
+12 rows in set (0.01 sec)
+
+mysql> table course_table_students;
++-------------------+---------------------+
+| course3_course_id | students_student_id |
++-------------------+---------------------+
+|                 1 |                   2 |
+|                 1 |                   3 |
+|                 1 |                   4 |
+|                 1 |                   5 |
+|                 1 |                   6 |
+|                 7 |                   8 |
+|                 7 |                   9 |
+|                 7 |                  10 |
+|                 7 |                  11 |
+|                 7 |                  12 |
+|                13 |                  14 |
+|                13 |                  15 |
++-------------------+---------------------+
+12 rows in set (0.00 sec)
+
+mysql> table hibernate_sequence;
++----------+
+| next_val |
++----------+
+|       16 |
++----------+
+1 row in set (0.02 sec)
+
+mysql>

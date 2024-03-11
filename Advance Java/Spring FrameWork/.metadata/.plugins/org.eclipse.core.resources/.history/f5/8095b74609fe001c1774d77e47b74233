@@ -1,0 +1,31 @@
+package OneToManyRelation;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class OneToManyController 
+{
+	@Autowired
+	StoryRepo srepo;
+	
+	@Autowired
+	StoryBookRepo brepo;
+
+	@PostMapping("/addstory")
+	public String AddStory()
+	{
+		StoryBook b= new StoryBook();
+		b.setBookName("Rich Dad Poor Dad");
+		b.setBookCost("500");
+		b.setPublisherName("K&N Publications");
+		
+		List<String> list= new arraArrayList<Story>();
+		
+		return ".................. User added ..................";
+	}
+}

@@ -1,0 +1,102 @@
+
+<!--2. Create a Registration Form
+	  Usernmae :  textfield        Surname : Textfied
+	  DOB :  input date
+	  Favorite color : input color
+	  Email  :
+	  Password : input password
+	  Re enter Password :  input password
+	 Address : Textarea  
+	  dropdown  - City 
+	  dropdown -state
+  	   Select educational qualifications:
+		Checkboxes for ssc , hsc Graduate  PG  , PHD                                    PostDoc   } all or any could be selected
+	     Gender
+		3 radio buttons   
+		 male /female/other  } only one should be selected
+		
+	     Button  - OK    , Button - Save  , Button -Clear -->
+
+      <html >
+           <b> <body style="background-image: url('./Img3.jpg'); color:rgb(14, 14, 13); text-align: center;">
+                  <div style=" background:rgb(6, 203, 187) ;border: 20; color: #000;">
+                        <h2 align="center">Registration Form<h2/>
+                  </div >
+
+
+                  <h1 > <b> Student Registration Form </b></h1>
+      
+                  Enter First Name
+                  <input type="text"/>
+
+                  &nbsp; Enter Last Name
+                  <input type="text"/>
+                  
+                  <p style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+                        <br/>
+                        Enter Date of Birth :   <input type="date"/><br/>
+                        <br/>Enter the Email :   <input type="email"/><br/>
+                        <br/> Enter the Password :   <input type="password"/><br/>
+                        <br/> ReEnter the Password :   <input type="password"/><br/>
+                  </p>
+               
+                  <p style="font-family: 'Times New Roman', Times, serif ;" >
+                        <br/>
+                        Enter the Address : 
+                        <textarea rows="3" cols="25"> </textarea><br/>
+
+                        <br/>Select City :
+                        <select>
+                              <option>None</option>
+                              <option>Mumbai</option>
+                              <option>Thane</option>
+                              <option>Nagpur</option>
+                              <option>Nashik</option>
+                              <option>SambhajiNagar</option>
+                              <option>Katraj-Pune</option>
+                              <option>Kolhapur</option>
+                              <option>Satara</option>
+                              <option>Sangli</option>
+                              <option>Hinjvadi-Pune</option>
+                              <option>Swargate-Pune</option>
+                              <option>Ahamadnagar</option>
+                              <option>Dhule</option>
+                        </select>
+
+                        Select State :
+                        <select>
+                              <option>None</option>
+                              <option>Maharashtra</option>
+                              <option>Goa</option>
+                              <option>karnataka</option>
+                              <option>TamilNadu</option>
+                              <option>Kerla</option>
+                              <option>MadhyaPradesh</option>
+                              <option>UttarPradesh</option>
+                              <option>Uttarankhand</option>
+                              <option>Sikkim</option>
+                              <option>ArunachalPradesh</option>
+                              <option>Telangana</option>
+                              <option>Zharkhand</option>
+                              <option>Chatisghardh</option>
+                        </select>
+
+                        <br/><br/>Select Education Qualification : 
+                        <br style="text-align: justify;"/><input type="checkbox" name="SSC"/>1.SSC
+                        <br style="text-align: justify;"/><input type="checkbox" name="HSC"/>2.HSC
+                        <br style="text-align: justify;"/><input type="checkbox" name="BE"/>3.BE
+                        <br style="text-align: justify;"/><input type="checkbox" name="Post-Graduate"/>4.Post Graduate<br/>
+
+                        <br/>Select Gender : 
+                        <br style="text-align: justify;"/><input type="radio" Name="Gender"/> Male
+                        <br style="text-align: justify;"/><input type="radio" Name="Gender"/> Female
+                        <br style="text-align: justify;"/><input type="radio" Name="Gender"/>Other <br/>
+                        
+                        <br/>
+                        <input type="button" Name="OK" value="OK"/>
+                        &emsp; <input type="submit" Name="Submit" value="Submit"/>
+                        &emsp; <input type="reset" Name="reset" value="reset"/>
+                  </p>
+            </body> 
+           </b>
+      </html>     
